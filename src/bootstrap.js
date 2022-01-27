@@ -1,4 +1,7 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
+import generateRouteConfig from './router';
 import App from './App.vue'
 
-createApp(App).mount('#app')
+const router = generateRouteConfig({path:null, basename:null});
+
+createApp(App).use(router).mount('#app');

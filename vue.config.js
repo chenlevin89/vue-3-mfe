@@ -10,9 +10,9 @@ module.exports = {
                 library: {type: "var", name: "vueRemote"},
                 filename: "remoteEntry.js",
                 exposes: {
-                    './Test': {
-                        import: './src/custom.js',
-                        name:`src_vue_custom`
+                    './Wrapper': {
+                        import: './src/Wrapper.js',
+                        name: 'vue_src_wrapper'
                     }
                 },
                 shared: {
@@ -24,7 +24,8 @@ module.exports = {
         ],
         devServer: {
             historyApiFallback: true,
-            port:8082
+            hot:false,
+            liveReload:true
         }
     }
 }
