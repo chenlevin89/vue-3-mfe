@@ -27,14 +27,7 @@ export const routes = [
   },
 ];
 
-const generateRouteConfig = ({path, basename}) => {
-
-  let appRoutes = routes;
-  const route = routes.find(curr => curr.path === path);
-
-  if (route) {
-    appRoutes = [{path: '', redirect: route.path}, route];
-  }
+const generateRouteConfig = ({ basename}) => {
 
   return createRouter({
     history: createWebHistory(basename),
