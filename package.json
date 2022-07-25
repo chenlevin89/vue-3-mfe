@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "serve": "PUBLIC_PATH=http://localhost:8082 vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "PUBLIC_PATH=http://localhost:8082 vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^3.0.4",
+    "vue-lib-sandbox": "file:vue-lib-sandbox-0.0.27.tgz",
     "vue-router": "^4.0.10"
   },
   "devDependencies": {

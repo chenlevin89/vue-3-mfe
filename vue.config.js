@@ -25,7 +25,8 @@ module.exports = {
         devServer: {
             historyApiFallback: true,
             hot:false,
-            liveReload:true
+            liveReload:true,
+            port:8082
         }
     }
 }

@@ -4,14 +4,18 @@
     <router-link to="/custom">Default</router-link> |
     <router-link to="/custom2">About</router-link>
   </div>
+  <Button :size="'large'" :config="{icon:'home'}">hello</Button>
    <router-view />
 </template>
 
 <script>
 
+import  Button from 'vue-lib-sandbox/components/button';
+
 export default {
   name: 'App',
   components: {
+    Button
   }
 }
 </script>
